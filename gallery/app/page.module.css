@@ -1,0 +1,21 @@
+.main {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 5px);
+  grid-auto-rows: 5px;
+  justify-content: center;
+  grid-auto-flow: dense;
+  /* 'grid-row-end' value is set dynamicly in 'ImgContainer' component.  */
+}
+
+@media (min-width: 700px) {
+  .main {
+    grid-template-columns: repeat(2, minmax(auto, 310px));
+    gap: 0 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    grid-template-columns: repeat(4, minmax(auto, 310px));    
+  }
+}

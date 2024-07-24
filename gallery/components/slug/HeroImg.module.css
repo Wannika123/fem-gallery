@@ -1,0 +1,67 @@
+.heroContainer {
+    position: relative;
+}
+
+.heroContainer img {
+    width: 100%;
+    height: auto;
+}
+
+.heroContainer button {
+    border: none;
+    background-color: #00000080;
+    color: var(--white);
+    padding: 14px 16px;
+    font-size: 0.625rem;
+    font-weight: 600;
+    letter-spacing: 0.1375rem;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.heroContainer button:hover {
+    background-color: #ffffff80;
+    cursor: pointer;
+}
+
+.heroContainer button svg {
+    margin-right: 14px;
+}
+
+.dialog::backdrop {
+    background-color: #00000090;
+}
+
+.dialog {
+    border: none;
+    background-color: transparent;
+}
+
+.dialog button {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 41px;
+    border: none;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 0.875rem;
+}
+
+.dialog button:hover {
+    opacity: 0.25;
+    cursor: pointer;
+}
+
+@media (min-width: 700px) {
+    .heroContainer {
+        width: 475px;
+    } 
+    .heroContainer button {
+        top: unset;
+        bottom: 16px;
+    }   
+}
+

@@ -1,0 +1,19 @@
+.header {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--medium-grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 700px) {
+    .header {
+        padding: 28px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        padding: 40px 0;
+    }
+}

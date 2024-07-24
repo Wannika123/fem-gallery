@@ -1,0 +1,144 @@
+.container {
+    padding-top: 24px;
+}
+
+.titleWrapper {
+    position: relative;
+    top: -50px;
+}
+
+.titleWrapper div {
+    background-color: var(--white);
+    padding: 24px;
+    width: 85%;
+    max-width: 280px;
+}
+
+.titleWrapper div h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.titleWrapper div p {
+    font-size: 0.9375rem;
+    color: var(--dark-grey);
+}
+
+.titleWrapper img {
+    width: 64px;
+    height: auto;
+    margin-left: 16px;
+}
+
+.textContainer {
+    margin-top: -70px;
+}
+
+.textContainer h1 {
+    text-align: right;
+    font-size: 100px;
+    line-height: 100px;
+    color: var(--light-grey);
+}
+
+.textContainer .paragraphDiv {
+    margin-top: -28px;
+    color: var(--dark-grey);
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+
+.textContainer p {
+    padding-bottom: 40px;
+}
+
+.textContainer a {
+    font-size: 0.5625rem;
+    letter-spacing: 0.125rem;
+    color: var(--dark-grey);
+}
+
+@media (min-width: 700px) {
+    .container {
+        padding-top: 40px;
+    }
+    .headContainer {
+        position: relative;
+        padding-right: 158px;    /* This is to fill the space left by absolute-positioned element, so that it can be centered. */
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .titleWrapper {
+        top: 0;
+        position: absolute;
+        left: 243px;
+    }
+    .titleWrapper div {
+        padding: 0;
+        padding-left: 65px;
+        padding-bottom: 65px;
+        padding-right: 40px;
+        min-width: 445px;  /* It doesn't work with just 'width', don't know why. */
+    }
+    .titleWrapper div h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .titleWrapper img {
+        width: 128px;
+        height: auto;
+        margin-left: 262px;
+    }
+    .textContainer {
+        margin-top: 64px;
+    }
+    .textContainer h1 {
+        font-size: 200px;
+        text-align: left;
+        margin-left: 23px;
+    }
+    .textContainer .paragraphDiv {
+        max-width: 457px;
+        margin: 0 auto;
+        margin-top: -60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+    }
+    .titleWrapper {
+        left: 410px;
+        min-height: 560px;
+        display: flex;
+        flex-direction: column;
+    }
+    .titleWrapper img {
+        margin-left: 95px;
+        margin-top: auto;
+        position: relative;
+        top: 64px;
+    }
+    .textContainer {
+        margin: 0;
+        min-width: 475px;
+    }
+    .textContainer h1 {
+        text-align: right;
+        margin: 0;
+    }
+    .textContainer .paragraphDiv {
+        margin: 0;
+        width: 100%;
+        max-width: 350px;
+        margin-top: -20px;
+    }
+    .textContainer p {
+        padding-bottom: 108px;
+    }
+}
