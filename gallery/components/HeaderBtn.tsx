@@ -1,8 +1,11 @@
 'use client'
 
 import { useRouter, usePathname } from "next/navigation"
-import { ALL_ROUTES } from "@/app/[slug]/page";
+import data from '@/data/data.json'
+import { formatPathName } from "@/utils/formatPathName"
 import styles from './HeaderBtn.module.css'
+
+const ALL_ROUTES = data.map(work => formatPathName(work.name));
 
 export default function HeaderBtn() {
 
