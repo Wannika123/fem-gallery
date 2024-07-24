@@ -3,11 +3,13 @@
 import styles from './Footer.module.css'
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
-import { ALL_ROUTES } from '@/app/[slug]/page';
+import { formatPathName } from '@/utils/formatPathName';
 import data from '@/data/data.json'
 
 import backBtn from '@/assets/shared/icon-back-button.svg';
 import nextBtn from '@/assets/shared/icon-next-button.svg';
+
+const ALL_ROUTES = data.map(work => formatPathName(work.name));
 
 export default function Footer() {
     const router = useRouter();

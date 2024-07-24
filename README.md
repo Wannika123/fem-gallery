@@ -12,7 +12,6 @@ This is a solution to the [Galleria slideshow site challenge on Frontend Mentor]
   - [Built with](#built-with)
     - [How I built the masonary layout](#how-i-built-the-masonary-layout)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)

@@ -6,7 +6,7 @@ import Link from 'next/link';
 import HeroImg from '@/components/slug/HeroImg';
 import styles from './page.module.css'
 
-export const ALL_ROUTES = data.map(work => formatPathName(work.name));
+const ALL_ROUTES = data.map(work => formatPathName(work.name));
 const ARTIST_SRC_LIST = artistSrcList();
 
 export function generateStaticParams() {
