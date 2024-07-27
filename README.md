@@ -46,7 +46,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub repo](https://github.com/Wannika123/fem-gallery)
-- Live Site URL: [vercel](https://fem-gallery-9aokm2mhx-wannika-kuankachorns-projects.vercel.app/)
+- Live Site URL: [vercel](https://fem-gallery.vercel.app/)
 
 ## My process
 
@@ -73,7 +73,7 @@ And then I got to learn the behavior of the grid layout that I've never realized
 
 What I understood before is that the grid items place itself in the column consecutively, but it's actually not so. Rather, 'grid items place itself in the column that has the least rows occupied first', 'row' is the first priority, not 'column'. Anyway, I tried to fix that with `grid-column`. But then, I came to another problem:
 
-By pushing certain grid item to the column that I wanted, I also pushed all the later grid items to later row (the row where pushed grid item ends) as well, and leaving the earlier rows blank. How I solved this problem is just desperately trying all the grid property, by typing 'grid' and see what property that VS code suggests. And I saw `grid-auto-flow`, I didn't know what it's used for, but I tried that, and then tried some of its values, then it came to this value: `grid-auto-flow: dense`. And then everything worked as I wanted.
+By pushing certain grid item to the column that I wanted, I also pushed all the later grid items to later row (after the row where pushed grid item ends) as well, and leaving the earlier rows blank. How I solved this problem is just desperately trying all the grid property, by typing 'grid' and see what property that VS code suggests. And I saw `grid-auto-flow`, I didn't know what it's used for, but I tried that, and then tried some of its values, then it came to this value: `grid-auto-flow: dense`. And then everything worked as I wanted.
 
 I researched more about `grid-auto-flow`, and what `grid-auto-flow: dense` does is that it places grid items to fill any holes in the grid. The value `row dense` also works as well.
 
