@@ -1,13 +1,17 @@
+.container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--white);
+    margin-top: 123px;
+}
+
 .darkLine {
     border-top: 1px solid var(--black);
 }
 
 .lightLine {
     border-top: 1px solid var(--medium-grey);
-}
-
-.lineContainer {
-    margin-top: 123px;
 }
 
 .footer {
@@ -44,7 +48,7 @@
 }
 
 @media (min-width: 700px) {
-    .lineContainer {
+    .container {
         margin-top: 53px;
     }
     .footer {
@@ -62,7 +66,7 @@
 }
 
 @media (min-width: 1200px) {
-    .lineContainer {
-        margin-top: 128px;
+    .container {
+        margin-top: 200px;
     }
 }

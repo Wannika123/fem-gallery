@@ -32,6 +32,7 @@
 
 .textContainer {
     margin-top: -70px;
+    margin-bottom: 120px;
 }
 
 .textContainer h1 {
@@ -92,6 +93,7 @@
     }
     .textContainer {
         margin-top: 64px;
+        margin-bottom: 150px;
     }
     .textContainer h1 {
         font-size: 200px;
@@ -111,6 +113,9 @@
         display: grid;
         grid-template-columns: auto auto;
         justify-content: space-between;
+    }
+    .headContainer {
+        margin-bottom: 200px;
     }
     .titleWrapper {
         left: 410px;

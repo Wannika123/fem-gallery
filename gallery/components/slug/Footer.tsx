@@ -45,7 +45,7 @@ export default function Footer() {
     }
 
     return (
-        <>
+        <div className={styles.container}>
             <div 
                 style={{ display: 'grid', gridTemplateColumns: `repeat(${ALL_ROUTES.length}, 1fr)`}}
                 className={styles.lineContainer}
@@ -72,6 +72,6 @@ export default function Footer() {
                     </button>
                 </div>
             </footer>
-        </>
+        </div>
     )
 }
